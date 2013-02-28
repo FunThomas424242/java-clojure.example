@@ -14,7 +14,7 @@ import clojure.lang.Compiler;
 import clojure.lang.RT;
 import clojure.lang.Var;
 
-public class ExecuteClosureExampleTest {
+public class ClojureCallTest {
 
 	private static final Long ACHT = new Long(8);
 	private static final Long ZWEI = new Long(2);

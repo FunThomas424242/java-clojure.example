@@ -14,13 +14,13 @@ import org.eclipse.ui.IWorkbenchWindowActionDelegate;
  * 
  * @see IWorkbenchWindowActionDelegate
  */
-public class ExecuteClosureExample implements IWorkbenchWindowActionDelegate {
+public class SampleAction implements IWorkbenchWindowActionDelegate {
 	private IWorkbenchWindow window;
 
 	/**
 	 * The constructor.
 	 */
-	public ExecuteClosureExample() {
+	public SampleAction() {
 	}
 
 	/**

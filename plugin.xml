@@ -15,9 +15,9 @@
             </separator>
          </menu>
          <action
-               class="clojure.actions.ExecuteClosureExample"
+               class="clojure.actions.SampleAction"
                icon="icons/sample.gif"
-               id="clojuretest.actions.ExecuteClosureExample"
+               id="clojure.actions.SampleAction"
                label="&amp;Sample Action"
                menubarPath="sampleMenu/sampleGroup"
                toolbarPath="sampleGroup"
