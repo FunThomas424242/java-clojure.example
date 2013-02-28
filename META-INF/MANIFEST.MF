@@ -26,6 +26,9 @@ Export-Package: clojure,
  clojure.repl.proxy$java.lang,
  clojure.test,
  clojure.xml.proxy$java.lang,
- test
-Require-Bundle: org.eclipse.ui;bundle-version="3.7.0"
+ clojure.actions
+Require-Bundle: org.eclipse.ui;bundle-version="3.7.0",
+ org.junit,
+ org.eclipse.core.runtime;bundle-version="3.7.0"
 Bundle-Vendor: FunThomas424242
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

@@ -15,13 +15,13 @@
             </separator>
          </menu>
          <action
-               class="clojuretest.actions.ExecuteClosureExample"
+               class="clojure.actions.ExecuteClosureExample"
                icon="icons/sample.gif"
                id="clojuretest.actions.ExecuteClosureExample"
                label="&amp;Sample Action"
                menubarPath="sampleMenu/sampleGroup"
                toolbarPath="sampleGroup"
-               tooltip="Hello, Eclipse world">
+               tooltip="Compute Clojure Expression">
          </action>
       </actionSet>
    </extension>

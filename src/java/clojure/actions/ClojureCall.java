@@ -1,4 +1,4 @@
-package test;
+package clojure.actions;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,11 +10,11 @@ import clojure.lang.Compiler;
 import clojure.lang.RT;
 import clojure.lang.Var;
 
-public class TestClojureCall {
+public class ClojureCall {
 
 	public static void main(String[] args) throws Exception {
 
-		TestClojureCall call = new TestClojureCall();
+		ClojureCall call = new ClojureCall();
 		call.executeString();
 		call.executeFile();
 	}
@@ -53,7 +53,7 @@ public class TestClojureCall {
 		Compiler.load(reader);
 
 		// Get a reference to the foo function.
-		Var foo = RT.var("user", "foo");
+		Var foo = RT.var(Constants.USER, Constants.FOO);
 
 		// Call it!
 		Object result = foo.invoke(5, 3);
@@ -64,8 +64,8 @@ public class TestClojureCall {
 	protected static Reader loadFileContent() {
 		Reader reader = null;
 
-		final InputStream in = TestClojureCall.class.getClassLoader()
-				.getResourceAsStream("hallo.clj");
+		final InputStream in = ClojureCall.class.getClassLoader()
+				.getResourceAsStream(Constants.FILE_PLUS_CLI);
 		reader = new InputStreamReader(in);
 
 		return reader;
@@ -75,7 +75,7 @@ public class TestClojureCall {
 	 * @return
 	 */
 	protected static Reader loadStringContent() {
-		String str = "(ns user) (defn foo [a b]   (- a b))";
+		String str = Constants.CLI_EXP_MINUS;
 		Reader reader = new StringReader(str);
 		return reader;
 	}

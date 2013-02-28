@@ -1,12 +1,10 @@
-package clojuretest.actions;
+package clojure.actions;
 
 import org.eclipse.jface.action.IAction;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.viewers.ISelection;
 import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.IWorkbenchWindowActionDelegate;
-
-import test.TestClojureCall;
 
 /**
  * Our sample action implements workbench action delegate. The action proxy will
@@ -34,7 +32,7 @@ public class ExecuteClosureExample implements IWorkbenchWindowActionDelegate {
 	@Override
 	public void run(IAction action) {
 
-		TestClojureCall clojureCall = new TestClojureCall();
+		ClojureCall clojureCall = new ClojureCall();
 		// execute String content
 		Object result = clojureCall.executeString();
 		MessageDialog.openInformation(window.getShell(),
