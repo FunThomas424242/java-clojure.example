@@ -1,9 +1,9 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: java-clojure.example
-Bundle-SymbolicName: jclojure.example;singleton:=true
+Bundle-SymbolicName: java-clojure.example;singleton:=true
 Bundle-Version: 1.0.0.qualifier
-Bundle-ClassPath: clojuretest.jar,
+Bundle-ClassPath: java-clojure.example.jar,
  clojure.jar,
  classes
 Export-Package: clojure,

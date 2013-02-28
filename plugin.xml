@@ -4,7 +4,7 @@
    <extension
          point="org.eclipse.ui.actionSets">
       <actionSet
-            id="clojuretest.actionSet"
+            id="java-clojure.example.actionSet"
             label="Sample Action Set"
             visible="true">
          <menu
