@@ -1,5 +1,5 @@
-java-clojure.example
-====================
+Projekt java-clojure.example
+============================
 
 
 Einfacher Java Code
