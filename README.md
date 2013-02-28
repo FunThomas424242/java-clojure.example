@@ -24,6 +24,7 @@ Eclipse Runtime Plugin
 
 Zusätzlich kann man versuchen das Projekt als Eclipse Runtime Application zu starten.
 Hierzu müssen folgende Plugins in Eclipse installiert sein:
+
 1. Counterclockwise Plugin
    (Eclipse plugin supporting the Clojure language
    For more information, see the release note here: http://code.google.com/p/counterclockwise/wiki/ReleaseNotes)
